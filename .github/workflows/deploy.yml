@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: codams-web-env
 
     steps:
     - name: Checkout
@@ -33,14 +34,14 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Load environment variables from secrets
+    - name: Load environment variables from environment
       env:
-        VITE_CONTACT_PHONE_PRIMARY: ${{ secrets.VITE_CONTACT_PHONE_PRIMARY }}
-        VITE_CONTACT_EMAIL: ${{ secrets.VITE_CONTACT_EMAIL }}
-        VITE_WHATSAPP_PHONE: ${{ secrets.VITE_WHATSAPP_PHONE }}
-        VITE_WHATSAPP_DEFAULT_MESSAGE: ${{ secrets.VITE_WHATSAPP_DEFAULT_MESSAGE }}
-        VITE_COMPANY_ADDRESS: ${{ secrets.VITE_COMPANY_ADDRESS }}
-        VITE_COMPANY_COUNTRY: ${{ secrets.VITE_COMPANY_COUNTRY }}
+        VITE_CONTACT_PHONE_PRIMARY: ${{ vars.VITE_CONTACT_PHONE_PRIMARY }}
+        VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
+        VITE_WHATSAPP_PHONE: ${{ vars.VITE_WHATSAPP_PHONE }}
+        VITE_WHATSAPP_DEFAULT_MESSAGE: ${{ vars.VITE_WHATSAPP_DEFAULT_MESSAGE }}
+        VITE_COMPANY_ADDRESS: ${{ vars.VITE_COMPANY_ADDRESS }}
+        VITE_COMPANY_COUNTRY: ${{ vars.VITE_COMPANY_COUNTRY }}
       run: |
         echo "VITE_CONTACT_PHONE_PRIMARY=$VITE_CONTACT_PHONE_PRIMARY" >> $GITHUB_ENV
         echo "VITE_CONTACT_EMAIL=$VITE_CONTACT_EMAIL" >> $GITHUB_ENV
