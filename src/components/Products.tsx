@@ -12,7 +12,7 @@ const solutions = [
   {
     icon: Layers,
     name: "Wagonx Lubricants",
-    url: "https://wagonxlubricants.com",
+    url: "https://wagonx.onrender.com/",
     description:
       "Custom website and digital presence for Wagonx Lubricants, built for performance and scalability.",
   },
