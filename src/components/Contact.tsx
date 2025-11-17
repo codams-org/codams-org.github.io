@@ -6,6 +6,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { CONFIG } from "@/config";
+import { openWhatsAppWithMessage } from "@/lib/whatsapp";
 
 
 const Contact = () => {
@@ -27,6 +28,13 @@ const Contact = () => {
       return;
     }
     
+    const whatsappMessage =
+      "New contact inquiry from Codams website:\n\n" +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone || "(not provided)"}\n\n` +
+      `Message:\n${formData.message}`;
+
     try {
       const response = await fetch("https://formspree.io/f/mnqrwwqq", {
         method: "POST",
@@ -43,8 +51,11 @@ const Contact = () => {
       } else {
         toast.error("Failed to send message. Please try again.");
       }
+
+      openWhatsAppWithMessage(whatsappMessage);
     } catch (error) {
       toast.error("Failed to send message. Please try again.");
+      openWhatsAppWithMessage(whatsappMessage);
     }
   };
 
