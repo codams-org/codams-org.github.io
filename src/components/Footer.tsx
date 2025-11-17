@@ -1,6 +1,7 @@
 //import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import logo from "@/assets/codams_logo_final.png";
 import { Link } from "react-router-dom";
+import { CONFIG } from "@/config";
 
 const Footer = () => {
   return (
@@ -74,10 +75,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>{import.meta.env.VITE_CONTACT_EMAIL}</li>
-              <li>{import.meta.env.VITE_CONTACT_PHONE_PRIMARY}</li>
-              <li>{import.meta.env.VITE_COMPANY_ADDRESS}</li>
-              <li>{import.meta.env.VITE_COMPANY_COUNTRY}</li>
+              <li>{CONFIG.CONTACT_EMAIL}</li>
+              <li>{CONFIG.CONTACT_PHONE_PRIMARY}</li>
+              <li>{CONFIG.COMPANY_ADDRESS}</li>
+              <li>{CONFIG.COMPANY_COUNTRY}</li>
             </ul>
           </div>
         </div>

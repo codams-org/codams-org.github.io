@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { CONFIG } from "@/config";
 
 const TermsOfService = () => {
   return (
@@ -95,7 +96,7 @@ const TermsOfService = () => {
 
             <h2 className="text-xl font-semibold">12. Governing Law and Dispute Resolution</h2>
             <p>
-              These Terms are governed by the laws of {import.meta.env.VITE_COMPANY_COUNTRY}, without regard to conflicts of law principles. Subject to
+              These Terms are governed by the laws of {CONFIG.COMPANY_COUNTRY}, without regard to conflicts of law principles. Subject to
               applicable law, courts located in Gurugram, Haryana shall have exclusive jurisdiction.
             </p>
 
@@ -107,9 +108,9 @@ const TermsOfService = () => {
 
             <h2 className="text-xl font-semibold">14. Contact</h2>
             <p>
-              Email: <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`}>{import.meta.env.VITE_CONTACT_EMAIL}</a><br />
-              Phone: {import.meta.env.VITE_CONTACT_PHONE_PRIMARY}<br />
-              Address: {import.meta.env.VITE_COMPANY_ADDRESS}, {import.meta.env.VITE_COMPANY_COUNTRY}
+              Email: <a href={`mailto:${CONFIG.CONTACT_EMAIL}`}>{CONFIG.CONTACT_EMAIL}</a><br />
+              Phone: {CONFIG.CONTACT_PHONE_PRIMARY}<br />
+              Address: {CONFIG.COMPANY_ADDRESS}, {CONFIG.COMPANY_COUNTRY}
             </p>
           </div>
         </section>

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { CONFIG } from "@/config";
 
 const PrivacyPolicy = () => {
   return (
@@ -112,9 +113,9 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-xl font-semibold">Contact Us</h2>
             <p>
-              Email: <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`}>{import.meta.env.VITE_CONTACT_EMAIL}</a><br />
-              Phone: {import.meta.env.VITE_CONTACT_PHONE_PRIMARY}<br />
-              Address: {import.meta.env.VITE_COMPANY_ADDRESS}, {import.meta.env.VITE_COMPANY_COUNTRY}
+              Email: <a href={`mailto:${CONFIG.CONTACT_EMAIL}`}>{CONFIG.CONTACT_EMAIL}</a><br />
+              Phone: {CONFIG.CONTACT_PHONE_PRIMARY}<br />
+              Address: {CONFIG.COMPANY_ADDRESS}, {CONFIG.COMPANY_COUNTRY}
             </p>
           </div>
         </section>

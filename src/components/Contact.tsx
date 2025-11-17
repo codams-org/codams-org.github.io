@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-
+import { CONFIG } from "@/config";
 
 
 const Contact = () => {
@@ -16,6 +16,8 @@ const Contact = () => {
     message: "",
   });
 
+  console.log("ENV CHECK", CONFIG);
+  console.log("EMAIL", CONFIG.CONTACT_EMAIL);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -129,7 +131,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium mb-1">Email</p>
-                  <p className="text-muted-foreground">{import.meta.env.VITE_CONTACT_EMAIL}</p>
+                  <p className="text-muted-foreground">{CONFIG.CONTACT_EMAIL}</p>
                 </div>
               </div>
 
@@ -139,7 +141,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium mb-1">Phone</p>
-                  <p className="text-muted-foreground">{import.meta.env.VITE_CONTACT_PHONE_PRIMARY}</p>
+                  <p className="text-muted-foreground">{CONFIG.CONTACT_PHONE_PRIMARY}</p>
                 </div>
               </div>
 
@@ -150,8 +152,8 @@ const Contact = () => {
                 <div>
                   <p className="font-medium mb-1">Office</p>
                   <p className="text-muted-foreground">
-                    {import.meta.env.VITE_COMPANY_ADDRESS}<br />
-                    {import.meta.env.VITE_COMPANY_COUNTRY}
+                    {CONFIG.COMPANY_ADDRESS}<br />
+                    {CONFIG.COMPANY_COUNTRY}
                   </p>
                 </div>
               </div>

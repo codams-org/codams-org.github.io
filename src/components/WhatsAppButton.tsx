@@ -1,10 +1,11 @@
 import { SiWhatsapp } from "react-icons/si";
+import { CONFIG } from "@/config";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     // Replace with your WhatsApp number (format: country code + number without +)
-    const phoneNumber = import.meta.env.VITE_WHATSAPP_PHONE;
-    const message = import.meta.env.VITE_WHATSAPP_DEFAULT_MESSAGE;
+    const phoneNumber = CONFIG.WHATSAPP_PHONE;
+    const message = CONFIG.WHATSAPP_DEFAULT_MESSAGE;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
