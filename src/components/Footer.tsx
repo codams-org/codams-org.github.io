@@ -1,4 +1,4 @@
-//import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Youtube, Github } from "lucide-react";
 import logo from "@/assets/codams_logo_final.png";
 import { Link } from "react-router-dom";
 import { CONFIG } from "@/config";
@@ -17,20 +17,26 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               Building smart software solutions for a smarter tomorrow.
             </p>
-            {/*<div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com/profile.php?id=61583601223507" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
+              <a href="https://www.linkedin.com/company/codams" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://www.youtube.com/@codams" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="https://github.com/codams-org" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
+                <Github className="w-5 h-5" />
+              </a>
+              {/*<a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
                 <Instagram className="w-5 h-5" />
-              </a>
-            </div>*/}
+              </a>*/}
+            </div>
           </div>
 
           {/* Quick links */}
@@ -38,18 +44,18 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/about-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/#why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Why Choose Us
+                <Link to="/products" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Products
                 </Link>
               </li>
               {/*<li>

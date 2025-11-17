@@ -19,7 +19,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in pt-16 md:pt-20">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/20 text-sm font-medium text-accent-foreground">
             <Sparkles className="w-4 h-4" />
@@ -60,7 +60,7 @@ const Hero = () => {
           </div>
           
           {/* Trust indicators */}
-          <div className="flex flex-wrap gap-8 justify-center items-center pt-8 text-sm text-muted-foreground">
+          <div className="flex flex-wrap gap-8 justify-center items-center pt-8 pb-12 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-primary rounded-full" />
               <span>Fast Delivery</span>

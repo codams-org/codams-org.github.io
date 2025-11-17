@@ -18,6 +18,9 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Home
+            </Link>
             <Link to="/about-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
@@ -26,9 +29,6 @@ const Navbar = () => {
             </Link>
             <Link to="/products" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Products
-            </Link>
-            <Link to="/why-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Why Us
             </Link>
             <Link to="/connect" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
