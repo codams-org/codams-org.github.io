@@ -1,112 +1,24 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Abhishake Gupta | Software Engineer</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content="Abhishake Gupta - Software Engineer with 11+ years of experience in Python, JavaScript, React, NextJS, SQL, and MongoDB."/>
-    <meta name="keywords" content="Software Engineer, Python Developer, JavaScript Developer, React, NextJS, Full-Stack Developer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/custom.css"/>
-</head>
-<body class="is-preload">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codams - Building Smart Software Solutions</title>
+    <meta name="description" content="End-to-end software development and automation solutions. Web development, WhatsApp bots, API integration, and custom automation tools for modern businesses." />
+    <meta name="author" content="Codams" />
 
-<!-- Header -->
-<div id="header">
-    <div class="top">
-        <!-- Logo -->
-        <div id="logo">
-            <span class="image avatar48"><img src="images/ProfilePic.jpeg" alt=""/></span>
-            <h1 id="title">Abhishake Gupta</h1>
-            <p>Software Engineer | <span id="experience-years"></span>+ years</p>
-        </div>
+    <meta property="og:title" content="Codams - Building Smart Software Solutions" />
+    <meta property="og:description" content="End-to-end software development and automation solutions for businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.svg" />
 
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-                <li><a href="#posts" id="posts-link"><span class="icon solid fa-pen-nib">Posts</span></a></li>
-                <li><a href="#career" id="career-link"><span class="icon solid fa-briefcase">Career Journey</span></a></li>
-                <li><a href="#projects" id="projects-link"><span class="icon solid fa-code">Projects</span></a></li>
-                <li><a href="#certifications" id="certifications-link"><span class="icon solid fa-certificate">Certifications</span></a></li>
-                <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-            </ul>
-        </nav>
-    </div>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@codams" />
+    <meta name="twitter:image" content="/og-image.svg" />
+  </head>
 
-    <div class="bottom">
-        <!-- Social Icons -->
-        <ul class="icons">
-            <li><a href="https://twitter.com/letspython3x" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://github.com/letspython3x/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/abhishake-gupta/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://medium.com/@letspython3.x" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-            <li><a href="https://www.youtube.com/@LetsPython3x" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Main -->
-<div id="main">
-    <!-- Intro Section -->
-    <div id="intro-section">
-        <div class="thumbnail-container" style="text-align: center; margin-bottom: 20px;">
-            <img src="images/ProfilePic.jpeg" alt="Abhishake Gupta" class="profile-thumbnail">
-        </div>
-    </div>
-    
-    <!-- Portfolio Section -->
-    <div id="portfolio-section"></div>
-    
-    <!-- Career Section -->
-    <div id="career-section"></div>
-    
-    <!-- Posts Section -->
-    <div id="posts-section"></div>
-    
-    <!-- About Me Section -->
-    <div id="about-section"></div>
-    
-    <!-- Projects Section -->
-    <div id="projects-section"></div>
-    
-    <!-- Certifications Section -->
-    <div id="certifications-section"></div>
-</div>
-
-<!-- Footer -->
-<div id="footer">
-    <!-- Copyright -->
-    <ul class="copyright">
-        <li>&copy; <span id="current-year"></span> Abhishake Gupta. All rights reserved.</li>
-        <li>Software Engineer</li>
-    </ul>
-</div>
-
-<script>
-    // Set current year in footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    // Calculate years of experience (started in 2014)
-    const startYear = 2014;
-    const currentYear = new Date().getFullYear();
-    const yearsOfExperience = currentYear - startYear;
-    document.getElementById('experience-years').textContent = yearsOfExperience;
-</script>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/section-loader.js"></script>
-
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
