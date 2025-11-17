@@ -27,6 +27,9 @@ const Navbar = () => {
             <Link to="/#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
             </Link>
+            <Link to="/#products" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Products
+            </Link>
             <Link to="/#why-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Why Us
             </Link>
@@ -57,6 +60,9 @@ const Navbar = () => {
             </Link>
             <Link to="/#services" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
+            </Link>
+            <Link to="/#products" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Products
             </Link>
             <Link to="/#why-us" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Why Us
