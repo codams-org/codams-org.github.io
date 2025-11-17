@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages (with Secrets)
 
 on:
   push:
-    branches: [ codams-web ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
