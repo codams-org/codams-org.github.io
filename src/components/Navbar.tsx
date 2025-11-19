@@ -18,28 +18,27 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/about-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
-            <Link to="/#team" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Team
-            </Link>
-            <Link to="/#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
             </Link>
-            <Link to="/#products" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/products" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Products
             </Link>
-            <Link to="/#why-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/why-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Why Us
             </Link>
-            <Link to="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/connect" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
           </div>
 
           <div className="hidden md:block">
-            <Button size="sm" onClick={() => navigate("/#contact")}>Get Started</Button>
+            <Button size="sm" onClick={() => navigate("/connect")}>
+              Get Started
+            </Button>
           </div>
 
           <button
@@ -52,25 +51,31 @@ const Navbar = () => {
 
         {isOpen && (
           <div className="md:hidden py-4 space-y-3 border-t border-border">
-            <Link to="/#about" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/about-us" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </Link>
-            <Link to="/#team" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Team
-            </Link>
-            <Link to="/#services" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/services" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
             </Link>
-            <Link to="/#products" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/products" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Products
             </Link>
-            <Link to="/#why-us" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/why-us" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Why Us
             </Link>
-            <Link to="/#contact" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/connect" className="block py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
-            <Button size="sm" className="w-full" onClick={() => { setIsOpen(false); navigate("/#contact"); }}>Get Started</Button>
+            <Button
+              size="sm"
+              className="w-full"
+              onClick={() => {
+                setIsOpen(false);
+                navigate("/connect");
+              }}
+            >
+              Get Started
+            </Button>
           </div>
         )}
       </div>

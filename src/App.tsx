@@ -9,6 +9,11 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
 import VCard from './components/vcard';
+import AboutPage from "./pages/AboutPage";
+import ProductsPage from "./pages/ProductsPage";
+import ServicesPage from "./pages/ServicesPage";
+import ConnectPage from "./pages/ConnectPage";
+import WhyUsPage from "./pages/WhyUsPage";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +36,11 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/connect" element={<ConnectPage />} />
+          <Route path="/why-us" element={<WhyUsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/vcard" element={<VCard />} />
