@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Layers, LineChart, Waves } from "lucide-react";
+import { Layers, LineChart, Waves, User } from "lucide-react";
 
 const solutions = [
   {
@@ -34,6 +34,14 @@ const products = [
     url: "https://briefwave.codams.in",
     description:
       "An automated system that generates and delivers concise summaries of IT circulars using AI, streamlining information consumption for busy professionals.",
+  },
+  {
+    icon: User,
+    name: "vCard",
+    stage: "In development",
+    url: "https://vcard.codams.in",
+    description:
+      "A SaaS tool to create and manage vCards for professionals.",
   },
 ];
 
