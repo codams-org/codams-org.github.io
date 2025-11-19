@@ -4,6 +4,8 @@ import { Linkedin } from "lucide-react";
 import ceoPhoto from "@/assets/ceo-photo.jpg";
 
 const Team = () => {
+  const yearsOfExperience = new Date().getFullYear() - 2013;
+
   return (
     <section id="team" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -28,7 +30,7 @@ const Team = () => {
                   
                   <div>
                     <h4 className="font-semibold text-sm text-muted-foreground mb-1">Experience</h4>
-                    <p className="text-sm">11+ years in Software Industry</p>
+                    <p className="text-sm">{yearsOfExperience}+ years in Software Industry</p>
                   </div>
                   
                 <a
