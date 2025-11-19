@@ -51,8 +51,8 @@ Codams is built with cutting-edge web technologies to provide a seamless user ex
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GIT_URL>
-cd codams-build-connect-main
+git clone https://github.com/codams-org/codams-org.github.io.git
+cd codams-org.github.io
 ```
 
 ### 2. Install Dependencies
@@ -98,15 +98,15 @@ The application will be available at `http://localhost:5173`
 
 ## 🏗️ Build & Deployment
 
-### Production Build
+### Production Build (local)
 
 ```bash
 npm run build
 ```
 
-This creates an optimized production build in the `dist` folder ready for deployment.
+This creates an optimized production build in the `dist` folder that is used by GitHub Actions when deploying.
 
-### Preview Production Build
+### Preview Production Build (local)
 
 ```bash
 npm run preview
@@ -139,6 +139,55 @@ The application uses environment variables for configuration:
 - `VITE_WHATSAPP_DEFAULT_MESSAGE` - Default WhatsApp message
 - `VITE_COMPANY_ADDRESS` - Company address
 - `VITE_COMPANY_COUNTRY` - Company country
+
+These variables are injected automatically in the GitHub Actions workflow using the `codams-web-env` environment (see `.github/workflows/deploy.yml`).
+
+Locally, you can create a `.env` file in the project root:
+
+```env
+VITE_CONTACT_PHONE_PRIMARY=+91XXXXXXXXXX
+VITE_CONTACT_EMAIL=your-email@codams.com
+VITE_WHATSAPP_PHONE=91XXXXXXXXXX
+VITE_WHATSAPP_DEFAULT_MESSAGE="Hello! I'm interested in your services."
+VITE_COMPANY_ADDRESS="Your Address, City- Pincode"
+VITE_COMPANY_COUNTRY="Your Country"
+```
+
+### Automatic Deployment (GitHub Pages)
+
+- The site is deployed automatically by GitHub Actions using the workflow in:
+  - `.github/workflows/deploy.yml`
+- Branch roles:
+  - `master` is the main development branch where you do day-to-day work.
+  - `main` is the deployment branch. **Pushes to `main` trigger deployment.**
+- The workflow:
+  - Runs on pushes to the `main` branch.
+  - Uses the `codams-web-env` environment for production `VITE_` variables.
+  - Builds the app with `npm run build`.
+  - Uploads the `dist` folder as a GitHub Pages artifact.
+  - Publishes the site to GitHub Pages with the custom domain `codams.in`.
+
+Typical flow:
+
+1. Work on `master`:
+
+```bash
+git checkout master
+# edit code
+git add .
+git commit -m "Your change"
+git push origin master
+```
+
+2. Merge into `main` and deploy:
+
+```bash
+git checkout main
+git merge master
+git push origin main
+```
+
+Pushing to `main` will trigger the GitHub Actions workflow and deploy the updated site.
 
 ### Formspree Integration
 
