@@ -2,9 +2,10 @@
   max-width: 420px;
   margin: 2rem auto;
   padding: 2rem;
-  background: white;
+  background: linear-gradient(145deg, #f9fafb, #edf2f7);
   border-radius: 16px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
   color: #333;
 }
@@ -46,9 +47,11 @@
 
 .title {
   text-align: center;
-  color: #4a5568;
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+  color: #1a365d;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .contact {
@@ -105,9 +108,11 @@
 
 .companyHeader {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .companyLogo {
@@ -122,6 +127,7 @@
   margin: 0;
   font-size: 1.4rem;
   color: #1a1a1a;
+  text-align: center;
 }
 
 .companyBox > p {
@@ -166,6 +172,57 @@
 
 .socialIcon:hover {
   transform: translateY(-2px);
+}
+
+.socialLinkedin {
+  color: #0a66c2;
+}
+
+.socialYoutube {
+  color: #ff0000;
+}
+
+.socialGithub {
+  color: #24292e;
+}
+
+.socialTwitter {
+  color: #1da1f2;
+}
+
+.socialFacebook {
+  color: #1877f2;
+}
+
+.socialInstagram {
+  color: #d53f8c;
+}
+
+.socialPayment {
+  color: #16a34a;
+}
+
+.downloadButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.downloadButton {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e0;
+  background-color: #f7fafc;
+  color: #2d3748;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.downloadButton:hover {
+  background-color: #edf2f7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
 }
 
 .websiteLink {

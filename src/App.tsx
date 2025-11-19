@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
-import VCard from './components/VCard';
+import VCard from './components/vcard';
 
 const queryClient = new QueryClient();
 

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mukta",
+    "name": "Mukta Gupta",
+    "title": "",
+    "designation": "Founder & CEO",
+    "companyName": "CODAMS",
+    "email": "info@codams.in",
+    "phone": "+91-9013207895",
+    "whatsappNumber": "919013207895",
+    "locationArea": "Gurugram",
+    "locationState": "Haryana",
+    "locationCountry": "IN",
+    "pincode": "122001",
+    "website": "https://www.codams.in",
+    "linkedin": "https://linkedin.com/in/muktagupta",
+    "companyLinkedin": "https://linkedin.com/company/codams",
+    "youtube": "https://youtube.com/@codams",
+    "github": "https://github.com/codams-org",
+    "twitter": "",
+    "facebook": "",
+    "instagram": "",
+    "paymentLink": "",
+    "services": [
+      "Website Design & Development",
+      "Custom Automation Solutions",
+      "API Development & Integration"
+    ],
+    "photo": "../../assets/ceo-photo.jpg",
+    "companyLogo": "../../assets/codams_logo_final.png"
+  }
+]
