@@ -44,6 +44,7 @@ const VCard: React.FC = () => {
 
       <VCardCompanySection profile={profile} />
 
+      {/* Comment below code to be handled later.
       <div className={styles.downloadButtonContainer}>
         <PdfDownloadButton
           className={styles.downloadButton}
@@ -53,6 +54,7 @@ const VCard: React.FC = () => {
           Download vCard PDF
         </PdfDownloadButton>
       </div>
+       */}
     </div>
   );
 };
