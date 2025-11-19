@@ -3,19 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import styles from './VCard.module.css';
 import type { Profile } from './profile';
+import companyLogo from '@/assets/codams_logo_final.png';
 
 interface VCardCompanySectionProps {
   profile: Profile;
 }
 
 const VCardCompanySection: React.FC<VCardCompanySectionProps> = ({ profile }) => {
-  const companyLogoSrc = new URL(profile.companyLogo, import.meta.url).href;
-
   return (
     <div className={styles.companyBox}>
       <div className={styles.companyHeader}>
         <img
-          src={companyLogoSrc}
+          src={companyLogo}
           alt={profile.companyName || 'Company'}
           className={styles.companyLogo}
         />

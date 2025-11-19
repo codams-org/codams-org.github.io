@@ -3,17 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from './VCard.module.css';
 import type { Profile } from './profile';
+import ceoPhoto from '@/assets/ceo-photo.jpg';
 
 interface VCardHeaderProps {
   profile: Profile;
 }
 
 const VCardHeader: React.FC<VCardHeaderProps> = ({ profile }) => {
-  const photoSrc = new URL(profile.photo, import.meta.url).href;
-
   return (
     <>
-      <img src={photoSrc} alt={profile.name} className={styles.profileImg} />
+      <img src={ceoPhoto} alt={profile.name} className={styles.profileImg} />
 
       <div className={styles.nameContainer}>
         <h2>{`${profile.title} ${profile.name}`.trim()}</h2>
