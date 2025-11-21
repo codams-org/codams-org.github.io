@@ -16,6 +16,13 @@ const solutions = [
     description:
       "Custom website and digital presence for Wagonx Lubricants, built for performance and scalability.",
   },
+   {
+    icon: Layers,
+    name: "Custom WhatsApp Bot",
+    url: "https://wa.me/918595186190?text=Hi",
+    description:
+      "Custom WhatsApp Bot for Taxastro Advisors to generate leads and provide information about their services.",
+  },
 ];
 
 const products = [
@@ -23,7 +30,7 @@ const products = [
     icon: LineChart,
     name: "Mutual Fund Scraper",
     stage: "In development",
-    url: "https://mfscrapper.codams.in",
+    url: "#",
     description:
       "A SaaS tool to fetch, clean, and aggregate mutual fund data so advisors and investors can make faster, data-driven decisions.",
   },
@@ -31,7 +38,7 @@ const products = [
     icon: Waves,
     name: "Briefwave",
     stage: "In development",
-    url: "https://briefwave.codams.in",
+    url: "#",
     description:
       "An automated system that generates and delivers concise summaries of IT circulars using AI, streamlining information consumption for busy professionals.",
   },
@@ -39,7 +46,7 @@ const products = [
     icon: User,
     name: "vCard",
     stage: "In development",
-    url: "https://vcard.codams.in",
+    url: "#",
     description:
       "A SaaS tool to create and manage vCards for professionals.",
   },
@@ -112,6 +119,8 @@ const Products = () => {
                   </div>
                   <CardTitle className="text-xl flex items-center justify-between">
                     <span>
+                      {product.name}
+                      {/* URL functionality commented out for future use
                       {product.url ? (
                         <a
                           href={product.url}
@@ -124,6 +133,7 @@ const Products = () => {
                       ) : (
                         product.name
                       )}
+                      */}
                     </span>
                     <span className="text-xs font-medium px-2 py-1 rounded-full bg-primary/5 text-primary border border-primary/20">
                       {product.stage}
