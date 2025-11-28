@@ -21,9 +21,9 @@ const Navbar = () => {
             <Link to="/#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Home
             </Link>
-            <Link to="/about-us" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </Link>
+            {/*<Link to="/team" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Team
+            </Link>*/}
             <Link to="/services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Services
             </Link>
