@@ -14,6 +14,8 @@ import ProductsPage from "./pages/ProductsPage";
 import ServicesPage from "./pages/ServicesPage";
 import ConnectPage from "./pages/ConnectPage";
 import WhyUsPage from "./pages/WhyUsPage";
+import TeamPage from "./pages/TeamPage";
+
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/team" element={<TeamPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/services" element={<ServicesPage />} />
