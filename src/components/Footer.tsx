@@ -64,12 +64,12 @@ const Footer = () => {
               </li>
               <li className="pt-1">
                 <a
-                  href="https://github.com/codams-tech/Sanyam"
+                  href="https://github.com/codams-tech/NoLalach"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors inline-flex items-center gap-1.5 font-medium"
                 >
-                  <span>TraderLock (संयम)</span>
+                  <span>NoLalach (Discipline Blocker)</span>
                   <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 font-semibold uppercase">Free</span>
                 </a>
               </li>

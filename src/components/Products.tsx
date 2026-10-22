@@ -172,15 +172,15 @@ export const Products = () => {
                 100% Free & Open-Source Community Product
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight flex items-center gap-3">
-                TraderLock: Anti-Overtrading & Discipline Blocker
-                <span className="text-base font-normal text-muted-foreground">(संयम)</span>
+                NoLalach: Anti-Overtrading & Discipline Blocker
+                <span className="text-base font-normal text-muted-foreground">(नो लालच)</span>
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                "Trade with discipline. Protect your wealth." — Completely free, offline, privacy-first Manifest V3 Chrome Extension.
+                "No Greed. Pure Discipline. Protect your wealth." — 100% free, offline, privacy-first Chrome Extension with 5-min pre-lock warnings.
               </p>
             </div>
             <a
-              href="https://github.com/codams-tech/Sanyam"
+              href="https://github.com/codams-tech/NoLalach"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-foreground text-background hover:bg-foreground/90 font-semibold text-sm shadow-md transition-all group shrink-0"
@@ -203,7 +203,7 @@ export const Products = () => {
                     <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground block">
                       Trader Psychology & Risk Enforcement
                     </span>
-                    <CardTitle className="text-xl sm:text-2xl font-bold">TraderLock v1.0.0</CardTitle>
+                    <CardTitle className="text-xl sm:text-2xl font-bold">NoLalach v1.1.0</CardTitle>
                   </div>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
@@ -219,7 +219,7 @@ export const Products = () => {
 
             <CardContent className="space-y-6">
               <CardDescription className="text-sm sm:text-base leading-relaxed text-foreground/80">
-                Traders blow accounts not because they don't know the rules, but because in high-cortisol impulse moments they break them. TraderLock enforces hard pre-render browser lockouts during Indian market chop zones (10:30 AM – 1:15 PM), imposes daily trade circuit breakers, and forces calming 4-7-8 breathing exercises without DOM bypass loopholes.
+                Traders blow accounts not because they don't know the rules, but because in high-cortisol impulse moments they break them. NoLalach enforces hard pre-render browser lockouts during Indian market chop zones (10:30 AM – 1:15 PM), imposes daily trade circuit breakers, and forces calming 4-7-8 breathing exercises without DOM bypass loopholes.
               </CardDescription>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-border/70">
@@ -228,8 +228,8 @@ export const Products = () => {
                   <div className="text-xs text-muted-foreground">Intercepts before page load via declarativeNetRequest & webNavigation</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-muted/50 border border-border space-y-1">
-                  <div className="text-xs font-bold text-foreground">Chop Zone Lockout</div>
-                  <div className="text-xs text-muted-foreground">Auto-locks 10:30 AM–1:15 PM theta burn hours + custom trading windows</div>
+                  <div className="text-xs font-bold text-foreground">5-Min Pre-Lock Warning</div>
+                  <div className="text-xs text-muted-foreground">Alerts 5 minutes before screen halts so you can square off open positions</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-muted/50 border border-border space-y-1">
                   <div className="text-xs font-bold text-foreground">Circuit Breaker</div>
@@ -253,7 +253,7 @@ export const Products = () => {
                   ))}
                 </div>
                 <a
-                  href="https://github.com/codams-tech/Sanyam"
+                  href="https://github.com/codams-tech/NoLalach"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"

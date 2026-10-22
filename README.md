@@ -8,12 +8,12 @@ Codams is built with cutting-edge web technologies to provide a seamless user ex
 
 ---
 
-## 🔒 Featured Open-Source Product: TraderLock (संयम)
+## 🔒 Featured Open-Source Product: NoLalach (नो लालच)
 
-Codams is proud to maintain and sponsor **[TraderLock (संयम)](https://github.com/codams-tech/Sanyam)** — an open-source Manifest V3 browser extension built to eliminate overtrading, revenge trading, and impulsive account blowouts for retail and options traders.
+Codams is proud to maintain and sponsor **[NoLalach (नो लालच)](https://github.com/codams-tech/NoLalach)** — an open-source Manifest V3 browser extension built to eliminate overtrading, revenge trading, and impulsive account blowouts for retail and options traders.
 
-- **Repository**: [codams-tech/Sanyam](https://github.com/codams-tech/Sanyam)
-- **Tagline**: *"Trade with discipline. Protect your wealth."*
+- **Repository**: [codams-tech/NoLalach](https://github.com/codams-tech/NoLalach)
+- **Tagline**: *"No Greed. Pure Discipline. Protect your wealth."*
 - **License**: MIT (100% Free Forever)
 - **Architecture**: Zero telemetry, 100% offline, bulletproof pre-render broker interception
 
