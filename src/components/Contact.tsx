@@ -63,10 +63,13 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center space-y-4 mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Get in Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to transform your business? Let's discuss how we can help you achieve your goals.
+        <div className="text-center space-y-4 mb-16 animate-fade-in max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider">
+            Start the Conversation
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Connect with Our Team</h2>
+          <p className="text-lg text-muted-foreground">
+            Whether you want to automate a trading strategy across Equities, F&O, or MCX Commodities, integrate broker APIs, or build custom enterprise software, we are ready to assist.
           </p>
         </div>
 
@@ -112,7 +115,7 @@ const Contact = () => {
                 <Label htmlFor="message">Message *</Label>
                 <Textarea
                   id="message"
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your trading strategy, broker requirements, or software project..."
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}

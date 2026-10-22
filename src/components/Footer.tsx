@@ -14,8 +14,8 @@ const Footer = () => {
               <img src={logo} alt="Codams logo" className="h-9 sm:h-10 md:h-12 w-auto" />
               <span className="text-2xl md:text-3xl font-bold">CODAMS</span>
             </Link>
-            <p className="text-sm text-muted-foreground">
-              Building smart software solutions for a smarter tomorrow.
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Algorithmic Trading Systems, Quantitative Architecture & Enterprise FinTech Software.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/profile.php?id=61583601223507" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
@@ -30,12 +30,6 @@ const Footer = () => {
               <a href="https://github.com/codams-org" target="_blank" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
                 <Github className="w-5 h-5" />
               </a>
-              {/*<a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
-                <Instagram className="w-5 h-5" />
-              </a>*/}
             </div>
           </div>
 
@@ -50,30 +44,48 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/products" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Products
+                  Products & Algo
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Team
+                <Link to="/why-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Why Us
                 </Link>
               </li>
-              {/*<li>
-                <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Testimonials
+              <li>
+                <Link to="/about-us" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/connect" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li className="pt-1">
+                <a
+                  href="https://github.com/codams-tech/Sanyam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors inline-flex items-center gap-1.5 font-medium"
+                >
+                  <span>TraderLock (संयम)</span>
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 font-semibold uppercase">Free</span>
                 </a>
-              </li>*/}
+              </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">Capabilities</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">Web Development</li>
-              <li className="text-sm text-muted-foreground">WhatsApp Bots</li>
-              <li className="text-sm text-muted-foreground">API Integration</li>
-              <li className="text-sm text-muted-foreground">Automation Tools</li>
+              <li className="text-sm text-muted-foreground">Algo Trading Systems</li>
+              <li className="text-sm text-muted-foreground">Broker API Gateways</li>
+              <li className="text-sm text-muted-foreground">NSE Delivery Scanners</li>
+              <li className="text-sm text-muted-foreground">Automated Risk Engines</li>
+              <li className="text-sm text-muted-foreground">Custom FinTech Dashboards</li>
+              <li className="text-sm text-muted-foreground">Enterprise Web & Bots</li>
             </ul>
           </div>
 

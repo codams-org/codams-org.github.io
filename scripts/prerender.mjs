@@ -20,39 +20,39 @@ const siteUrl = "https://codams.in";
 const routes = [
   {
     path: "/about-us",
-    title: "About Us | Codams",
+    title: "About Us | Codams Quant & Engineering",
     description:
-      "Learn about Codams and why businesses choose us for custom software, automation, and integration solutions.",
+      "Discover Codams' quantitative trading philosophy, machine learning architectures, and engineering edge.",
   },
   {
     path: "/services",
-    title: "Our Services | Codams",
+    title: "Our Services | Codams Algorithmic Trading",
     description:
-      "Explore Codams' software services: web development, WhatsApp bots, API integrations, and custom automation tools.",
+      "Explore Codams' quantitative services: autonomous algorithmic trading systems, multi-broker APIs, market data scanners, and custom FinTech software.",
   },
   {
     path: "/products",
-    title: "Solutions & Products | Codams",
+    title: "Solutions & Products | Codams AlgoEngine",
     description:
-      "Discover Codams' software products and ready-to-deploy automation solutions built for modern businesses.",
+      "Discover Codams' flagship algorithmic trading engines (Equities, F&O, MCX Commodities) and enterprise software solutions.",
   },
   {
     path: "/why-us",
-    title: "Why Choose Codams",
+    title: "Why Choose Codams | The Quant Advantage",
     description:
-      "See why businesses partner with Codams for reliable, end-to-end software development and automation.",
+      "See why traders and enterprises partner with Codams for sub-150ms broker routing, mathematical backtesting, and disciplined risk management.",
   },
   {
     path: "/team",
     title: "Leadership Team | Codams",
     description:
-      "Meet the leadership team behind Codams' software development and automation solutions.",
+      "Meet the leadership team behind Codams' quantitative trading platforms and enterprise software.",
   },
   {
     path: "/connect",
-    title: "Contact Us | Codams",
+    title: "Contact Us | Codams Algotrading & FinTech",
     description:
-      "Get in touch with Codams to discuss your web development, automation, or integration project.",
+      "Consult with Codams regarding custom algorithmic strategies, broker API integrations, or enterprise software development.",
   },
   {
     path: "/privacy-policy",
