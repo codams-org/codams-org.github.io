@@ -25,12 +25,18 @@ Codams is proud to maintain and sponsor **[NoLalach (नो लालच)](https
   <em>High-friction broker lockout screen enforcing discipline during low-probability chop zones (10:30 AM – 1:15 PM)</em>
 </p>
 
-<p align=center>
-  <img src="public/images/sanyam/popup-dashboard.png" alt="TraderLock Toolbar Popup Dashboard" width="340">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="public/images/sanyam/incognito-setup.png" alt="Incognito Setup Safeguard" width="440">
+<p align="center">
+  <img src="public/images/sanyam/settings-dashboard.png" alt="NoLalach Settings Dashboard" width="800">
   <br>
-  <em>Left: Toolbar monitor with live countdown & trade limit circuit breaker. Right: Anti-tampering Incognito safeguard.</em>
+  <em>Allowed trading hours with quick presets, 5-minute pre-lock warning alert, and broker selection</em>
+</p>
+
+<p align="center">
+  <img src="public/images/sanyam/popup-dashboard.png" alt="NoLalach Toolbar Popup Dashboard" width="340">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/images/sanyam/strict-mode-settings.png" alt="Anti-Tampering Strict Mode" width="400">
+  <br>
+  <em>Left: Toolbar monitor with live countdown & trade limit circuit breaker. Right: Anti-tampering 15-min cooldown pledge.</em>
 </p>
 
 ## ✨ Features
