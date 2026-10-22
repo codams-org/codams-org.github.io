@@ -4,7 +4,34 @@ A modern, responsive web application for Codams - a software development company
 
 ## 🚀 Project Overview
 
-Codams is built with cutting-edge web technologies to provide a seamless user experience while showcasing the company's services and expertise. The application features a responsive design, contact forms, and integrated WhatsApp communication.
+Codams is built with cutting-edge web technologies to provide a seamless user experience while showcasing the company's quantitative trading engines, algorithmic trading architecture, and proprietary software products.
+
+---
+
+## 🔒 Featured Open-Source Product: TraderLock (संयम)
+
+Codams is proud to maintain and sponsor **[TraderLock (संयम)](https://github.com/codams-tech/Sanyam)** — an open-source Manifest V3 browser extension built to eliminate overtrading, revenge trading, and impulsive account blowouts for retail and options traders.
+
+- **Repository**: [codams-tech/Sanyam](https://github.com/codams-tech/Sanyam)
+- **Tagline**: *"Trade with discipline. Protect your wealth."*
+- **License**: MIT (100% Free Forever)
+- **Architecture**: Zero telemetry, 100% offline, bulletproof pre-render broker interception
+
+### Product Showcase
+
+<p align=center>
+  <img src="public/images/sanyam/lockout-screen.png" alt="TraderLock High-Friction Lockout Screen" width="800">
+  <br>
+  <em>High-friction broker lockout screen enforcing discipline during low-probability chop zones (10:30 AM – 1:15 PM)</em>
+</p>
+
+<p align=center>
+  <img src="public/images/sanyam/popup-dashboard.png" alt="TraderLock Toolbar Popup Dashboard" width="340">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/images/sanyam/incognito-setup.png" alt="Incognito Setup Safeguard" width="440">
+  <br>
+  <em>Left: Toolbar monitor with live countdown & trade limit circuit breaker. Right: Anti-tampering Incognito safeguard.</em>
+</p>
 
 ## ✨ Features
 
